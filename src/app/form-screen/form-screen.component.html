@@ -1,0 +1,71 @@
+
+<!-- <div class="ibox"> -->
+  <!-- <div class="ibox-head">
+      <div class="ibox-title">
+          Create-Rule
+      </div>
+  </div> -->
+  <!-- <div class="ibox-body">
+
+    <div *ngFor="let facility of facilities">
+      <h3>{{ facility.name }}</h3>
+      <ng-select
+        [items]="facility.options"
+        [(ngModel)]="selectedOptions[facility.facility_id]"
+        bindLabel="name"
+        bindValue="id"
+        (change)="handleOptionSelection(facility.facility_id, selectedOptions[facility.facility_id])"
+      >
+      </ng-select>
+    </div>
+
+</div> -->
+  <div class="container">
+ <br>
+ <br>
+    <div class="row">
+      <div class="col-1">
+        <!-- Column -->
+      </div>
+      <div class="col">
+        <div *ngFor="let facility of facilities">
+          <h3>{{ facility.name }}</h3>
+          <ng-select
+            [items]="facility.options"
+            [(ngModel)]="selectedOptions[facility.facility_id]"
+            bindLabel="name"
+            bindValue="id"
+            (change)="handleOptionSelection(facility.facility_id, selectedOptions[facility.facility_id])"
+          >
+          </ng-select>
+        </div>
+      </div>
+      <div class="col-1">
+        <!-- Column -->
+      </div>
+    </div>
+
+
+
+    </div>
+
+
+
+
+
+<!-- <div *ngFor="let facility of facilities">
+  <p>{{facility.name}} </p>
+  <p>   <select [(ngModel)]="selectedOptions[facility.name]">
+    <option *ngFor="let option of facility.options" [value]="option.name"  [(ngModel)]="selectedOptions[facility.facility_id]"
+    (change)="handleOptionSelection(facility.facility_id, option.id)">
+      {{ option.name }}
+    </option>
+  </select> </p>
+</div> -->
+
+
+
+
+  <!-- </div> -->
+
+
